@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* utility classes */
+.container{
+  width: 80%;
+  margin: auto;
+}
+
+.rounded {
+  border-radius: 5px;
+}
+/* /utility classes */
+
+
+/* #site-header */
+
+/* nav */
+header {
+  background-color: #0F325A;
+  height: 550px;
+  color: #fff;
+  position: relative;
+}
+
+nav::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+nav .logo {
+  width: 15%;
+}
+
+nav .menu-left {
+  width: 50%;
+}
+
+nav .menu-right {
+  width: 35%;
+}
+
+nav .logo, nav .menu-left, nav .menu-right {
+  height: 80px;
+  float: left;
+  position: relative;
+}
+
+nav li {
+  list-style: none;
+  display: inline-block;
+}
+
+nav a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 11px;
+  margin: .9em;
+}
+
+nav ul, .logo img {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.logo img {
+  padding-bottom: 11px; /* uguale al font-size dei link */
+}
+
+nav .menu-right ul {
+  right: 0;
+}
+
+.menu-right a.btn-nobg {
+  border: 1px solid #fff;
+  padding: 8px 28px;
+}
+
+.menu-right a.btn-green {
+  background-color: #7DBB00;
+  padding: 8px;
+  margin-right: 0;
+}
+
+.menu-left a:hover {
+  color: orange;
+}
+/* /nav */
+
+/* banner */
+.banner-left {
+  height: calc(100% - 80px);
+  position: relative;
+}
+
+.text-banner {
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.text-banner h1 {
+  width: 90%;
+  font-size: 49px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.text-banner a {
+  font-size: 14px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #7DBB00;
+  padding: 20px;
+}
+
+.banner-bg {
+  position: absolute;
+  bottom: 0;
+  height: calc(100% - 80px);
+  width: 100%;
+  background-image: url("../img/banner_header.png");
+  background-size: 65%;
+  background-repeat: no-repeat;
+  background-position: 110% 110%;
+
+}
+/* /banner */
+
+/* /#site-header */

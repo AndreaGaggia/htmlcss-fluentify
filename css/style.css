@@ -17,6 +17,13 @@ body {
 .rounded {
   border-radius: 5px;
 }
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 /* /utility classes */
 
 
@@ -140,3 +147,73 @@ nav .menu-right ul {
 /* /banner */
 
 /* /#site-header */
+
+
+/* #site-main */
+.message-row {
+  background-color: #d3d3d3;
+  text-align: center;
+  height: 140px;
+  position: relative;
+}
+
+.message-row h2, h4 {
+  font-weight: normal;
+  line-height: 1.5em;
+}
+
+.message-row h4 {
+  color: grey;
+}
+
+
+div.services::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.service-card {
+  width: calc(100% / 3);
+  float: left;
+  text-align: center;
+  margin: 30px 0;
+}
+
+.service-card .photo {
+  height: 144px;
+}
+
+.service-card .profile img {
+  width: 30%;
+}
+
+.service-card .computer img {
+  width: 50%;
+}
+
+.service-card .doc img {
+  width: 35%;
+}
+
+.service-card h2 {
+  color: #7DBB00;
+  font-weight: normal;
+  margin: 20px;
+}
+
+.service-card hr {
+  width: 20%;
+  margin: auto;
+}
+
+.service-card p {
+  color: grey;
+  margin: 20px;
+}
+
+#main-divisor {
+  width: 98%;
+  margin: auto;
+}
+/* /#site-main */
